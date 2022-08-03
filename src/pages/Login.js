@@ -18,7 +18,7 @@ const Login = () => {
   };
   useEffect(() => {
     if (localStorage.getItem("chat-app-user")) {
-      // navigate("/");
+      navigate("/");
     }
   }, []);
 
@@ -55,7 +55,7 @@ const Login = () => {
           JSON.stringify(data.user)
         );
 
-        // navigate("/");
+        navigate("/");
       }
     }
   };
